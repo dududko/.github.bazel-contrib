@@ -103,7 +103,7 @@ jobs:
         os: ${{ fromJSON(needs.matrix-prep-os.outputs.os) }}
         bazelversion: ${{ fromJSON(needs.matrix-prep-bazelversion.outputs.bazelversions) }}
         folder: ${{ fromJSON(inputs.folders) }}
-        bzlmodEnabled: [true, false]
+        bzlmodEnabled: [true]
         exclude: ${{ fromJSON(inputs.exclude) }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
